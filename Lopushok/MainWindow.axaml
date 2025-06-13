@@ -2,6 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         x:Class="Lopushok.MainWindow"
         x:CompileBindings="False"
+        Icon="/Assets/Lopushok.ico"
         Title="Список продукции" Height="800" Width="1325">
   <Grid Margin="10">
     <Grid.RowDefinitions>
