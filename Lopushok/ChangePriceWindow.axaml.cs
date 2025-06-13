@@ -24,11 +24,11 @@ namespace Lopushok
         public void Apply_Click(object? sender, RoutedEventArgs e)
         {
             var text = PriceBox.Text?.Trim()
-                .Replace(',', '.'); // Унифицируем разделитель
+                .Replace(',', '.');
 
             if (decimal.TryParse(text, NumberStyles.Any, CultureInfo.InvariantCulture, out var price) && price >= 0)
             {
-                EnteredPrice = Math.Round(price, 2); // округление до сотых
+                EnteredPrice = Math.Round(price, 2);
                 Close(EnteredPrice);
             }
             else

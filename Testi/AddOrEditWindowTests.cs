@@ -18,21 +18,15 @@ public class AddMaterialTests
     [OneTimeSetUp]
     public void InitAvalonia()
     {
-        try
-        {
-            AppBuilder.Configure<App>()
-                .UsePlatformDetect()
-                .UseHeadless(new AvaloniaHeadlessPlatformOptions())
-                .SetupWithoutStarting();
-        }
-        catch (Exception ex)
-        {
-            Assert.Fail($"Failed to initialize Avalonia: {ex}");
-        }
+        AppBuilder.Configure<App>()
+            .UsePlatformDetect()
+            .UseHeadless(new AvaloniaHeadlessPlatformOptions())
+            .SetupWithoutStarting();
     }
 
     [SetUp]
     public void Setup()
+    
     {
         _dbContext = new RemoteDatabaseContext();
         _window = new AddOrEditWindow();
@@ -77,7 +71,7 @@ public class AddMaterialTests
     public void AddMaterial_Click_WithInvalidQuantity_ShouldShowError()
     {
         _window.MaterialBox.SelectedItem = _testMaterial.MaterialName;
-        _window.MaterialQuantityBox.Text = "0"; // Некорректное количество
+        _window.MaterialQuantityBox.Text = "0";
 
         _window.AddMaterial_Click(null, null);
 
@@ -141,7 +135,7 @@ public class AddMaterialTests
     public void AddMaterial_Click_WithNonNumericQuantity_ShouldShowError()
     {
         _window.MaterialBox.SelectedItem = _testMaterial.MaterialName;
-        _window.MaterialQuantityBox.Text = "abc"; // Нечисловое значение
+        _window.MaterialQuantityBox.Text = "abc";
 
         _window.AddMaterial_Click(null, null);
 

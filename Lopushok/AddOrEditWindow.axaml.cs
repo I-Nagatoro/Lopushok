@@ -233,7 +233,6 @@ namespace Lopushok
                     _imagePath = "products/picture.png";
                 }
         
-                // Check for duplicate article number
                 var duplicateArticle = _db.Products
                     .Any(p => p.Article == ArticleNumberBox.Text && 
                              (_product == null || p.ProductId != _product.ProductId));
@@ -244,7 +243,7 @@ namespace Lopushok
                     return;
                 }
         
-                if (_product == null) // Adding new product
+                if (_product == null)
                 {
                     _product = new ProductDAO
                     {
@@ -259,9 +258,8 @@ namespace Lopushok
                     };
                     
                     _db.Products.Add(_product);
-                    _db.SaveChanges(); // Save first to get the ProductId
+                    _db.SaveChanges();
                     
-                    // Now add materials after we have the ID
                     foreach (var material in _materials)
                     {
                         _db.ProductMaterials.Add(new ProductMaterialDAO
@@ -273,7 +271,7 @@ namespace Lopushok
                         });
                     }
                 }
-                else // Editing existing product
+                else
                 {
                     _product.ProductName = TitleBox.Text;
                     _product.Article = ArticleNumberBox.Text;
@@ -283,13 +281,11 @@ namespace Lopushok
                     _product.ProductTypeId = productType.Id;
                     _product.ImagePath = _imagePath ?? _product.ImagePath;
                     
-                    // Remove existing materials
                     var existingMaterials = _db.ProductMaterials
                         .Where(pm => pm.ProductId == _product.ProductId)
                         .ToList();
                     _db.ProductMaterials.RemoveRange(existingMaterials);
                     
-                    // Add new materials
                     foreach (var material in _materials)
                     {
                         _db.ProductMaterials.Add(new ProductMaterialDAO
@@ -339,7 +335,6 @@ namespace Lopushok
 
         public void Delete_Click(object? sender, RoutedEventArgs e)
         {
-            // Находим продукт вместе с его материалами и продажами
             var productForDelete = _db.Products
                 .Include(p => p.ProductMaterials)
                 .Include(p => p.ProductSales) // Добавляем загрузку связанных продаж
@@ -348,17 +343,14 @@ namespace Lopushok
             if (productForDelete == null)
                 return;
 
-            // Проверяем, есть ли связанные продажи
             if (productForDelete.ProductSales != null && productForDelete.ProductSales.Any())
             {
-                // Если есть продажи - показываем сообщение и запрещаем удаление
                 TextError.Text = "Нельзя удалить продукт, так как существуют связанные продажи";
                 return;
             }
 
             try
             {
-                // Если продаж нет - удаляем материалы и сам продукт
                 _db.ProductMaterials.RemoveRange(productForDelete.ProductMaterials);
                 _db.Products.Remove(productForDelete);
                 _db.SaveChanges();

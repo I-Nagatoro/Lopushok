@@ -7,11 +7,8 @@ public class ProductSalesDAO
 {
     public int id { get; set; }
     
-    [ForeignKey("Product")] // Указываем, что это внешний ключ
+    [ForeignKey("Product")]
     public int product_id { get; set; }
-    
     public DateOnly sale_date { get; set; }
-    
-    // Навигационное свойство к продукту
     public virtual ProductDAO Product { get; set; }
 }

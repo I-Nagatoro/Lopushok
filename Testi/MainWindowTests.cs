@@ -20,17 +20,10 @@ namespace Testi
         [OneTimeSetUp]
         public void InitAvalonia()
         {
-            try
-            {
-                AppBuilder.Configure<App>()
-                    .UsePlatformDetect()
-                    .UseHeadless(new AvaloniaHeadlessPlatformOptions())
-                    .SetupWithoutStarting();
-            }
-            catch (Exception ex)
-            {
-                Assert.Fail($"Failed to initialize Avalonia: {ex}");
-            }
+            AppBuilder.Configure<App>()
+                .UsePlatformDetect()
+                .UseHeadless(new AvaloniaHeadlessPlatformOptions())
+                .SetupWithoutStarting();
         }
 
         [SetUp]
@@ -39,7 +32,6 @@ namespace Testi
             _dbContext = new RemoteDatabaseContext();
             _mainWindow = new MainWindow();
             
-            // Инициализация необходимых свойств
             _mainWindow.SearchBox = new TextBox();
             _mainWindow.TypeFilterBox = new ComboBox();
             _mainWindow.NameSortBox = new ComboBox();
@@ -61,19 +53,18 @@ namespace Testi
         [Test]
         public void ApplyFilters_ShouldFilterBySearchText()
         {
-            // Arrange
             _mainWindow._allProducts = new List<ProductDisplay>
             {
                 new() { 
                     ProductName = "Тестовый продукт 1", 
-                    Article = "TEST001",
+                    Article = "999",
                     ProductType = "Тип 1",
                     WorkshopNumber = 1,
                     MinAgentCost = 100
                 },
                 new() { 
                     ProductName = "Другой продукт", 
-                    Article = "TEST002",
+                    Article = "009",
                     ProductType = "Тип 2",
                     WorkshopNumber = 2,
                     MinAgentCost = 200
@@ -81,11 +72,9 @@ namespace Testi
             };
             _mainWindow.SearchBox.Text = "тестовый";
 
-            // Act
             _mainWindow.ApplyFilters();
             var result = _mainWindow.ProductListView.ItemsSource as IEnumerable<ProductDisplay>;
 
-            // Assert
             Assert.That(result.Count(), Is.EqualTo(1));
             Assert.That(result.First().ProductName, Is.EqualTo("Тестовый продукт 1"));
         }
@@ -93,12 +82,11 @@ namespace Testi
         [Test]
         public void ApplySorting_ShouldSortByNameAscending()
         {
-            // Arrange
             var products = new List<ProductDisplay>
             {
-                new() { ProductName = "B Продукт", Article = "TEST002" },
-                new() { ProductName = "A Продукт", Article = "TEST001" },
-                new() { ProductName = "C Продукт", Article = "TEST003" }
+                new() { ProductName = "B Продукт", Article = "999" },
+                new() { ProductName = "A Продукт", Article = "009" },
+                new() { ProductName = "C Продукт", Article = "090" }
             };
             
             _mainWindow.NameSortBox.ItemsSource = new List<ComboBoxItem>
@@ -111,10 +99,8 @@ namespace Testi
                 .Cast<ComboBoxItem>()
                 .First(x => x.Tag.ToString() == "NameAsc");
 
-            // Act
             var result = _mainWindow.ApplySorting(products).ToList();
 
-            // Assert
             Assert.That(result[0].ProductName, Is.EqualTo("A Продукт"));
             Assert.That(result[1].ProductName, Is.EqualTo("B Продукт"));
             Assert.That(result[2].ProductName, Is.EqualTo("C Продукт"));
@@ -123,7 +109,6 @@ namespace Testi
         [Test]
         public void ApplySorting_ShouldSortByWorkshopNumberDescending()
         {
-            // Arrange
             var products = new List<ProductDisplay>
             {
                 new() { ProductName = "Продукт 1", WorkshopNumber = 1 },
@@ -141,10 +126,8 @@ namespace Testi
                 .Cast<ComboBoxItem>()
                 .First(x => x.Tag.ToString() == "WorkshopDesc");
 
-            // Act
             var result = _mainWindow.ApplySorting(products).ToList();
 
-            // Assert
             Assert.That(result[0].WorkshopNumber, Is.EqualTo(3));
             Assert.That(result[1].WorkshopNumber, Is.EqualTo(2));
             Assert.That(result[2].WorkshopNumber, Is.EqualTo(1));
@@ -153,7 +136,6 @@ namespace Testi
         [Test]
         public void ApplySorting_ShouldSortByPriceAscending()
         {
-            // Arrange
             var products = new List<ProductDisplay>
             {
                 new() { ProductName = "Продукт 1", MinAgentCost = 300 },
@@ -171,10 +153,8 @@ namespace Testi
                 .Cast<ComboBoxItem>()
                 .First(x => x.Tag.ToString() == "PriceAsc");
 
-            // Act
             var result = _mainWindow.ApplySorting(products).ToList();
 
-            // Assert
             Assert.That(result[0].MinAgentCost, Is.EqualTo(100));
             Assert.That(result[1].MinAgentCost, Is.EqualTo(200));
             Assert.That(result[2].MinAgentCost, Is.EqualTo(300));
@@ -183,7 +163,6 @@ namespace Testi
         [Test]
         public void ApplySorting_ShouldApplyMultipleSorts()
         {
-            // Arrange
             var products = new List<ProductDisplay>
             {
                 new() { ProductName = "Продукт 1", WorkshopNumber = 1, MinAgentCost = 100 },
@@ -211,10 +190,8 @@ namespace Testi
                 .Cast<ComboBoxItem>()
                 .First(x => x.Tag.ToString() == "PriceDesc");
 
-            // Act
             var result = _mainWindow.ApplySorting(products).ToList();
 
-            // Assert
             Assert.That(result[0].WorkshopNumber, Is.EqualTo(1));
             Assert.That(result[0].MinAgentCost, Is.EqualTo(200));
             Assert.That(result[1].WorkshopNumber, Is.EqualTo(1));
@@ -225,18 +202,15 @@ namespace Testi
         [Test]
         public void RenderPageButtons_ShouldCreateCorrectButtons()
         {
-            // Arrange
             _mainWindow._currentPage = 2;
             _mainWindow._totalPages = 3;
             _mainWindow._allProducts = Enumerable.Range(1, 50)
                 .Select(i => new ProductDisplay { ProductName = $"Продукт {i}" })
                 .ToList();
 
-            // Act
             _mainWindow.RenderPageButtons();
 
-            // Assert
-            Assert.That(_mainWindow.PageButtonsPanel.Children.Count, Is.EqualTo(5)); // Назад + 3 страницы + Вперёд
+            Assert.That(_mainWindow.PageButtonsPanel.Children.Count, Is.EqualTo(5));
             
             var buttons = _mainWindow.PageButtonsPanel.Children
                 .OfType<Button>()
@@ -248,13 +222,12 @@ namespace Testi
             Assert.That(buttons[3].Content, Is.EqualTo("3"));
             Assert.That(buttons[4].Content, Is.EqualTo("Вперёд"));
             
-            Assert.That(buttons[2].IsEnabled, Is.False); // Текущая страница должна быть disabled
+            Assert.That(buttons[2].IsEnabled, Is.False);
         }
 
         [Test]
         public void ProductListView_SelectionChanged_ShouldToggleButtonsVisibility()
         {
-            // Arrange
             _mainWindow._allProducts = new List<ProductDisplay>
             {
                 new() { ProductName = "Продукт 1" },
@@ -262,20 +235,16 @@ namespace Testi
             };
             _mainWindow.ApplyFilters();
 
-            // Act - select one item
             _mainWindow.ProductListView.SelectedItems.Add(_mainWindow.ProductListView.Items[0]);
             _mainWindow.ProductListView_SelectionChanged(null, null);
 
-            // Assert
             Assert.That(_mainWindow.Edit_Product.IsVisible, Is.True);
             Assert.That(_mainWindow.ChangePriceButton.IsVisible, Is.True);
             Assert.That(_mainWindow.IncreasePriceButton.IsVisible, Is.True);
 
-            // Act - clear selection
             _mainWindow.ProductListView.SelectedItems.Clear();
             _mainWindow.ProductListView_SelectionChanged(null, null);
 
-            // Assert
             Assert.That(_mainWindow.Edit_Product.IsVisible, Is.False);
             Assert.That(_mainWindow.ChangePriceButton.IsVisible, Is.False);
             Assert.That(_mainWindow.IncreasePriceButton.IsVisible, Is.False);
