@@ -9,7 +9,7 @@ using NUnit.Framework;
 namespace Testi;
 
 [TestFixture]
-public class AddMaterialTests
+public class AddOrEditWindowTests
 {
     private AddOrEditWindow _window;
     private RemoteDatabaseContext _dbContext;
