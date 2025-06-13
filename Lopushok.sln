@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lopushok", "Lopushok\Lopushok.csproj", "{BBC34A12-622B-4DA8-9D41-8A82C79F655C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testi", "Testi\Testi.csproj", "{11A446E6-AA0F-452B-9657-B05274EA0B78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBC34A12-622B-4DA8-9D41-8A82C79F655C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC34A12-622B-4DA8-9D41-8A82C79F655C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC34A12-622B-4DA8-9D41-8A82C79F655C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC34A12-622B-4DA8-9D41-8A82C79F655C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A446E6-AA0F-452B-9657-B05274EA0B78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A446E6-AA0F-452B-9657-B05274EA0B78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A446E6-AA0F-452B-9657-B05274EA0B78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A446E6-AA0F-452B-9657-B05274EA0B78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,60 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Lopushok.MainWindow"
+        x:CompileBindings="False"
+        Title="Список продукции" Height="800" Width="1325">
+  <Grid Margin="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+    </Grid.RowDefinitions>
+
+    <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="10" Margin="0,0,0,10">
+      <TextBox x:Name="SearchBox" Width="300" Watermark="Введите для поиска" TextChanged="SearchBox_TextChanged"/>
+      <ComboBox x:Name="NameSortBox" Width="200" SelectionChanged="FilterChanged"/>
+      <ComboBox x:Name="NumWorkSortBox" Width="200" SelectionChanged="FilterChanged"/>
+      <ComboBox x:Name="MinCostBox" Width="200" SelectionChanged="FilterChanged"/>
+      <ComboBox x:Name="TypeFilterBox" Width="200" SelectionChanged="FilterChanged"/>
+      <Button Content="Сбросить фильтры" Click="ResetFilters_Click" />
+    </StackPanel>
+
+    <ListBox x:Name="ProductListView" Grid.Row="1" SelectionMode="Multiple" Margin="0,0,0,10" SelectionChanged="ProductListView_SelectionChanged">
+      <ListBox.ItemTemplate>
+        <DataTemplate>
+          <Border BorderThickness="1" BorderBrush="Gray" Margin="0,0,0,10" Padding="10"
+                  Background="{Binding IsStale, Converter={StaticResource BoolToRedConverter}}">
+            <Grid>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <Image Source="{Binding Image}" Width="80" Height="80" Margin="0,0,10,0"/>
+              <StackPanel Grid.Column="1">
+                <TextBlock>
+                  <Run Text="{Binding ProductType}"/>
+                  <Run Text=" | "/>
+                  <Run Text="{Binding ProductName}" FontWeight="Bold"/>
+                </TextBlock>
+                <TextBlock><Run Text="Артикул: "/><Run Text="{Binding Article}"/></TextBlock>
+                <TextBlock><Run Text="Цех: "/><Run Text="{Binding WorkshopNumber}"/></TextBlock>
+                <TextBlock><Run Text="Цена: "/><Run Text="{Binding Price}"/></TextBlock>
+                <TextBlock><Run Text="Дата последней продажи: "/><Run Text="{Binding LastSaleDateFormatted}"/></TextBlock>
+              </StackPanel>
+            </Grid>
+          </Border>
+        </DataTemplate>
+      </ListBox.ItemTemplate>
+    </ListBox>
+
+    <StackPanel x:Name="PageButtonsPanel" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10" Spacing="5" />
+
+    <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right" Spacing="10">
+      <Button x:Name="Add_Product" Content="Добавить продукт" Click="Add_Product_OnClick"/>
+      <Button x:Name="Edit_Product" Content="Редактировать продукт" Click="Edit_Product_OnClick" IsVisible="False"/>
+      <Button x:Name="ChangePriceButton" Content="Изменить стоимость" Click="ChangePriceButton_Click" IsVisible="False"/>
+      <Button x:Name="IncreasePriceButton" Content="Увеличить стоимость на..." Click="IncreasePriceButton_Click" IsVisible="False"/>
+    </StackPanel>
+  </Grid>
+</Window>
