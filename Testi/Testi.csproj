@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ClassLibraryMaterial\ClassLibraryMaterial.csproj" />
+      <ProjectReference Include="..\WSUniversalLib\WSUniversalLib.csproj" />
       <ProjectReference Include="..\Lopushok\Lopushok.csproj" />
     </ItemGroup>
 

@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lopushok", "Lopushok\Lopush
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testi", "Testi\Testi.csproj", "{11A446E6-AA0F-452B-9657-B05274EA0B78}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryMaterial", "ClassLibraryMaterial\ClassLibraryMaterial.csproj", "{4AE11FFE-AF2A-4FF8-886E-F0865B11C88F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSUniversalLib", "WSUniversalLib\WSUniversalLib.csproj", "{4AE11FFE-AF2A-4FF8-886E-F0865B11C88F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

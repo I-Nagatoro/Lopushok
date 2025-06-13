@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ClassLibraryMaterial
+namespace WSUniversalLib
 {
     public static class Calculation
     {

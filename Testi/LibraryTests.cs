@@ -1,5 +1,5 @@
 ﻿using NUnit.Framework;
-using ClassLibraryMaterial;
+using WSUniversalLib;
 
 namespace Testi
 {
