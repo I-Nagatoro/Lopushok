@@ -1,0 +1,335 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\testi\\addoreditwindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|solutionrelative:testi\\addoreditwindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\app.manifest||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\app.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\lopushok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\lopushok.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\mainwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\migrations\\remotedatabasecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\models\\productsalesdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\models\\productsalesdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\testi\\mainwindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|solutionrelative:testi\\mainwindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\testi\\librarytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|solutionrelative:testi\\librarytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AE11FFE-AF2A-4FF8-886E-F0865B11C88F}|ClassLibraryMaterial\\ClassLibraryMaterial.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\classlibrarymaterial\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AE11FFE-AF2A-4FF8-886E-F0865B11C88F}|ClassLibraryMaterial\\ClassLibraryMaterial.csproj|solutionrelative:classlibrarymaterial\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\testi\\changepricewindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{11A446E6-AA0F-452B-9657-B05274EA0B78}|Testi\\Testi.csproj|solutionrelative:testi\\changepricewindowtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\changepricewindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\changepricewindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\addoreditwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\addoreditwindow.axaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\migrations\\20250526133153_create.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\migrations\\20250526133153_create.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\migrations\\20250526133153_create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\migrations\\20250526133153_create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|c:\\users\\sokol\\riderprojects\\lopushok\\lopushok\\booltoredconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBC34A12-622B-4DA8-9D41-8A82C79F655C}|Lopushok\\Lopushok.csproj|solutionrelative:lopushok\\booltoredconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lopushok",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Lopushok.csproj",
+              "RelativeDocumentMoniker": "Lopushok\\Lopushok.csproj",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Lopushok.csproj",
+              "RelativeToolTip": "Lopushok\\Lopushok.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-13T18:07:39.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RemoteDatabaseContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Lopushok\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "RelativeToolTip": "Lopushok\\Migrations\\RemoteDatabaseContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:07:22.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Program.cs",
+              "RelativeDocumentMoniker": "Lopushok\\Program.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Program.cs",
+              "RelativeToolTip": "Lopushok\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:07:20.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductSalesDAO.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Models\\ProductSalesDAO.cs",
+              "RelativeDocumentMoniker": "Lopushok\\Models\\ProductSalesDAO.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Models\\ProductSalesDAO.cs",
+              "RelativeToolTip": "Lopushok\\Models\\ProductSalesDAO.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:07:10.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindowTests.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\MainWindowTests.cs",
+              "RelativeDocumentMoniker": "Testi\\MainWindowTests.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\MainWindowTests.cs",
+              "RelativeToolTip": "Testi\\MainWindowTests.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAmwP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:06:22.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Lopushok\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\MainWindow.axaml",
+              "RelativeToolTip": "Lopushok\\MainWindow.axaml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-13T18:06:20.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LibraryTests.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\LibraryTests.cs",
+              "RelativeDocumentMoniker": "Testi\\LibraryTests.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\LibraryTests.cs",
+              "RelativeToolTip": "Testi\\LibraryTests.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAA8wGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:05:18.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "app.manifest",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\app.manifest",
+              "RelativeDocumentMoniker": "Lopushok\\app.manifest",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\app.manifest",
+              "RelativeToolTip": "Lopushok\\app.manifest",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001203|",
+              "WhenOpened": "2025-06-13T18:04:16.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\App.axaml",
+              "RelativeDocumentMoniker": "Lopushok\\App.axaml",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\App.axaml",
+              "RelativeToolTip": "Lopushok\\App.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-13T18:04:15.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddOrEditWindowTests.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\AddOrEditWindowTests.cs",
+              "RelativeDocumentMoniker": "Testi\\AddOrEditWindowTests.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\AddOrEditWindowTests.cs",
+              "RelativeToolTip": "Testi\\AddOrEditWindowTests.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAUwI8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:04:05.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\ClassLibraryMaterial\\Class1.cs",
+              "RelativeDocumentMoniker": "ClassLibraryMaterial\\Class1.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\ClassLibraryMaterial\\Class1.cs",
+              "RelativeToolTip": "ClassLibraryMaterial\\Class1.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAiwDUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:05:05.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ChangePriceWindowTests.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\ChangePriceWindowTests.cs",
+              "RelativeDocumentMoniker": "Testi\\ChangePriceWindowTests.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Testi\\ChangePriceWindowTests.cs",
+              "RelativeToolTip": "Testi\\ChangePriceWindowTests.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAwJ0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:04:18.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChangePriceWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\ChangePriceWindow.axaml",
+              "RelativeDocumentMoniker": "Lopushok\\ChangePriceWindow.axaml",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\ChangePriceWindow.axaml",
+              "RelativeToolTip": "Lopushok\\ChangePriceWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-13T18:04:17.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AddOrEditWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\AddOrEditWindow.axaml",
+              "RelativeDocumentMoniker": "Lopushok\\AddOrEditWindow.axaml",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\AddOrEditWindow.axaml",
+              "RelativeToolTip": "Lopushok\\AddOrEditWindow.axaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-13T18:04:03.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250526133153_create.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Migrations\\20250526133153_create.Designer.cs",
+              "RelativeDocumentMoniker": "Lopushok\\Migrations\\20250526133153_create.Designer.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Migrations\\20250526133153_create.Designer.cs",
+              "RelativeToolTip": "Lopushok\\Migrations\\20250526133153_create.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:04:01.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250526133153_create.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Migrations\\20250526133153_create.cs",
+              "RelativeDocumentMoniker": "Lopushok\\Migrations\\20250526133153_create.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\Migrations\\20250526133153_create.cs",
+              "RelativeToolTip": "Lopushok\\Migrations\\20250526133153_create.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAqwJkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:03:54.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BoolToRedConverter.cs",
+              "DocumentMoniker": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\BoolToRedConverter.cs",
+              "RelativeDocumentMoniker": "Lopushok\\BoolToRedConverter.cs",
+              "ToolTip": "C:\\Users\\sokol\\RiderProjects\\Lopushok\\Lopushok\\BoolToRedConverter.cs",
+              "RelativeToolTip": "Lopushok\\BoolToRedConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T18:03:49.308Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 993,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
