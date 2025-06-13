@@ -62,18 +62,11 @@ namespace Lopushok
 
             if (!string.IsNullOrEmpty(_product.ImagePath))
             {
-                try
+                var path = Path.Combine(AppContext.BaseDirectory, _product.ImagePath);
+                if (File.Exists(path))
                 {
-                    var path = Path.Combine(AppContext.BaseDirectory, _product.ImagePath);
-                    if (File.Exists(path))
-                    {
-                        ImagePreview.Source = new Bitmap(path);
-                        _imagePath = _product.ImagePath;
-                    }
-                }
-                catch
-                {
-                    // Ошибка загрузки изображения
+                    ImagePreview.Source = new Bitmap(path);
+                    _imagePath = _product.ImagePath;
                 }
             }
 
@@ -195,15 +188,40 @@ namespace Lopushok
 
         public void Save_Click(object? sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(TitleBox.Text) ||
-                string.IsNullOrWhiteSpace(ArticleNumberBox.Text) ||
-                !decimal.TryParse(MinCostBox.Text, out decimal minCost) ||
-                minCost <= 0 ||
-                !int.TryParse(WorkshopNumberBox.Text, out int workshopNumber) ||
-                !int.TryParse(ProdPersonCountBox.Text, out int workersRequired) ||
-                ProductTypeBox.SelectedItem == null)
+            if (string.IsNullOrWhiteSpace(TitleBox.Text))
             {
-                TextError.Text = "Заполните все обязательные поля корректно";
+                TextError.Text = "Заполните поле наименования продукта корректно";
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(ArticleNumberBox.Text) || !int.TryParse(ArticleNumberBox.Text, out int article))
+            {
+                TextError.Text = "Укажите корректный артикул";
+                return;
+            }
+            
+            if (ProductTypeBox.SelectedItem == null)
+            {
+                TextError.Text = "Укажите корректный тип продукта";
+                return;
+            }
+
+            if (!decimal.TryParse(MinCostBox.Text, out decimal minCost) ||
+                minCost <= 0)
+            {
+                TextError.Text = "Укажите корректную минимальную стоимость";
+                return;
+            }
+
+            if (!int.TryParse(WorkshopNumberBox.Text, out int workshopNumber) || workshopNumber <= 0)
+            {
+                TextError.Text = "Укажите корректный номер цеха";
+                return;
+            }
+            
+            if (!int.TryParse(ProdPersonCountBox.Text, out int workersRequired) || workersRequired <= 0)
+            {
+                TextError.Text = "Укажите корректное кол-во сотрудников";
                 return;
             }
         
