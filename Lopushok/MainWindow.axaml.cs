@@ -14,8 +14,8 @@ namespace Lopushok
     public partial class MainWindow : Window
     {
         private const int PageSize = 20;
-        private int _currentPage = 1;
-        private int _totalPages = 1;
+        public int _currentPage = 1;
+        public int _totalPages = 1;
         public List<ProductDisplay> _allProducts = new();
         private static readonly RemoteDatabaseContext _db = new();
 
@@ -205,7 +205,7 @@ namespace Lopushok
             return orderedQuery ?? query;
         }
 
-        private void RenderPageButtons()
+        public void RenderPageButtons()
         {
             PageButtonsPanel.Children.Clear();
 
@@ -313,7 +313,7 @@ namespace Lopushok
             }
         }
 
-        private void Add_Product_OnClick(object? sender, RoutedEventArgs e)
+        public void Add_Product_OnClick(object? sender, RoutedEventArgs e)
         {
             var window = new AddOrEditWindow();
             window.Closed += (s, e) => LoadData();
@@ -332,8 +332,8 @@ namespace Lopushok
             window.Closed += (s, e) => LoadData();
             window.Show();
         }
-        
-        private void ResetFilters_Click(object? sender, RoutedEventArgs e)
+
+        public void ResetFilters_Click(object? sender, RoutedEventArgs e)
         {
             SearchBox.Text = "";
             NameSortBox.SelectedIndex = 0;

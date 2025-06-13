@@ -16,7 +16,7 @@ namespace Lopushok
             PriceBox.Text = suggestedPrice.ToString("0.##", CultureInfo.InvariantCulture);
         }
 
-        private void Cancel_Click(object? sender, RoutedEventArgs e)
+        public void Cancel_Click(object? sender, RoutedEventArgs e)
         {
             Close(null);
         }

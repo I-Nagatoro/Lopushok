@@ -17,10 +17,10 @@ namespace Lopushok
     {
         public ProductDAO? _product;
         private int productID;
-        private List<MaterialDAO> _allMaterials = new();
+        public List<MaterialDAO> _allMaterials = new();
         private RemoteDatabaseContext _db = new();
         private string? _imagePath;
-        private ObservableCollection<MaterialForList> _materials = new();
+        public ObservableCollection<MaterialForList> _materials = new();
 
         public AddOrEditWindow()
         {
@@ -88,14 +88,14 @@ namespace Lopushok
             }
         }
 
-        private void LoadTypes()
+        public void LoadTypes()
         {
             var productTypes = _db.ProductTypes.ToList();
             ProductTypeBox.ItemsSource = productTypes;
             ProductTypeBox.SelectedIndex = 0;
         }
 
-        private void LoadMaterials()
+        public void LoadMaterials()
         {
             _allMaterials = _db.Materials.ToList();
             MaterialBox.ItemsSource = _allMaterials.Select(m => m.MaterialName).ToList();
@@ -139,7 +139,7 @@ namespace Lopushok
             }
         }
 
-        public void AddMaterial_Click(object? sender, RoutedEventArgs e)
+        public void AddMaterial_Click(object? sender, RoutedEventArgs routedEventArgs)
         {
             TextError.Text = "";
 
@@ -303,7 +303,7 @@ namespace Lopushok
             Close();
         }
 
-        private void MaterialSearchBox_KeyUp(object? sender, Avalonia.Input.KeyEventArgs e)
+        public void MaterialSearchBox_KeyUp(object? sender, Avalonia.Input.KeyEventArgs e)
         {
             string search = MaterialSearchBox.Text?.ToLower() ?? "";
 

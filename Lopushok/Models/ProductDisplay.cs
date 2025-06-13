@@ -9,6 +9,7 @@ public class ProductDisplay
     public int ProductId { get; set; }
     public string ProductName { get; set; }
     public string ProductType { get; set; }
+    public int ProductTypeId { get; set; }
     public string Article { get; set; }
     public int WorkshopNumber { get; set; }
     public decimal? MinAgentCost { get; set; }
