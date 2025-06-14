@@ -26,7 +26,7 @@ namespace Testi
         {
             const decimal testPrice = 123.45m;
 
-            var window = new ChangePriceWindow(testPrice);
+            var window = new ChangePriceWindow(testPrice, "");
 
             Assert.That(window.PriceBox.Text, Is.EqualTo(testPrice.ToString("0.##", CultureInfo.InvariantCulture)));
             Assert.That(window.EnteredPrice, Is.Null);
@@ -36,7 +36,7 @@ namespace Testi
         public void Apply_Click_WithValidPrice_ShouldSetEnteredPriceAndClose()
         {
             const decimal testPrice = 150.75m;
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = testPrice.ToString(CultureInfo.InvariantCulture) }
             };
@@ -53,7 +53,7 @@ namespace Testi
         [Test]
         public void Apply_Click_WithCommaDecimalSeparator_ShouldParseCorrectly()
         {
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = "150,75" }
             };
@@ -66,7 +66,7 @@ namespace Testi
         [Test]
         public void Apply_Click_WithDotDecimalSeparator_ShouldParseCorrectly()
         {
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = "150.75" }
             };
@@ -79,7 +79,7 @@ namespace Testi
         [Test]
         public void Apply_Click_WithNegativePrice_ShouldNotCloseWindow()
         {
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = "-10" }
             };
@@ -96,7 +96,7 @@ namespace Testi
         [Test]
         public void Apply_Click_WithInvalidText_ShouldNotCloseWindow()
         {
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = "abc" }
             };
@@ -113,7 +113,7 @@ namespace Testi
         [Test]
         public void Apply_Click_WithEmptyText_ShouldNotCloseWindow()
         {
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = "" }
             };
@@ -130,7 +130,7 @@ namespace Testi
         [Test]
         public void Apply_Click_ShouldRoundToTwoDecimalPlaces()
         {
-            var window = new ChangePriceWindow(100m)
+            var window = new ChangePriceWindow(100m, "")
             {
                 PriceBox = { Text = "123.4567" }
             };
@@ -143,7 +143,7 @@ namespace Testi
         [Test]
         public void Cancel_Click_ShouldCloseWithNullResult()
         {
-            var window = new ChangePriceWindow(100m);
+            var window = new ChangePriceWindow(100m, "");
             bool closed = false;
             window.Closed += (_, _) => closed = true;
 

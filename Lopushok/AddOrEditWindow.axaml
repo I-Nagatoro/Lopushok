@@ -3,25 +3,25 @@
         x:Class="Lopushok.AddOrEditWindow"
         x:CompileBindings="False"
         Icon="/Assets/Lopushok.ico"
-        Title="Редактирование продукции" Height="800" Width="1200">
+        Title="Редактирование продукции" Height="925" Width="1200">
         
     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
         <Grid RowDefinitions="Auto,*" Margin="10">
             <StackPanel Spacing="10">
                 <TextBlock Text="Название: " />
-                <TextBox x:Name="TitleBox"/>
+                <TextBox x:Name="TitleBox" Width="250" HorizontalAlignment="Left"/>
                 
                 <TextBlock Text="Артикул: " />
-                <TextBox x:Name="ArticleNumberBox"/>
+                <TextBox x:Name="ArticleNumberBox" Width="250" HorizontalAlignment="Left"/>
                 
                 <TextBlock Text="Минимальная цена: " />
-                <TextBox x:Name="MinCostBox"/>
+                <TextBox x:Name="MinCostBox" Width="250" HorizontalAlignment="Left"/>
                             
                 <TextBlock Text="Введите номер цеха: " />
-                <TextBox x:Name="WorkshopNumberBox"/>
+                <TextBox x:Name="WorkshopNumberBox" Width="250" HorizontalAlignment="Left"/>
                 
                 <TextBlock Text="Кол-во рабочих для производства: " />
-                <TextBox x:Name="ProdPersonCountBox"/>
+                <TextBox x:Name="ProdPersonCountBox" Width="250" HorizontalAlignment="Left"/>
                 
                 <TextBlock Text="Тип продукта: " />
                 <ComboBox x:Name="ProductTypeBox">

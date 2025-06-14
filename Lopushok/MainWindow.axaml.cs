@@ -101,7 +101,6 @@ namespace Lopushok
         public void ApplyFilters()
         {
             IEnumerable<ProductDisplay> query = _allProducts;
-
             var search = SearchBox.Text?.Trim() ?? "";
             if (!string.IsNullOrEmpty(search))
             {
@@ -112,7 +111,6 @@ namespace Lopushok
                     p.ProductName.ToLower().Contains(search) ||
                     p.Article.ToLower().Contains(search));
             }
-
             if (TypeFilterBox.SelectedIndex > 0 && TypeFilterBox.SelectedItem is string selectedType)
             {
                 query = query.Where(p => p.ProductType == selectedType);
@@ -121,9 +119,7 @@ namespace Lopushok
                 MinCostBox.SelectedIndex = 0;
 
             }
-
             query = ApplySorting(query);
-
             _totalPages = Math.Max(1, (int)Math.Ceiling(query.Count() / (double)PageSize));
             _currentPage = Math.Clamp(_currentPage, 1, _totalPages);
 
@@ -131,20 +127,16 @@ namespace Lopushok
                 .Skip((_currentPage - 1) * PageSize)
                 .Take(PageSize)
                 .ToList();
-
             RenderPageButtons();
         }
 
         public IEnumerable<ProductDisplay> ApplySorting(IEnumerable<ProductDisplay> query)
         {
             string GetTag(ComboBox box) => (box.SelectedItem as ComboBoxItem)?.Tag?.ToString() ?? "None";
-
             string workshopTag = GetTag(NumWorkSortBox);
             string priceTag = GetTag(MinCostBox);
             string nameTag = GetTag(NameSortBox);
-
             IOrderedEnumerable<ProductDisplay>? orderedQuery = null;
-
             if (workshopTag != "None")
             {
                 orderedQuery = orderedQuery switch
@@ -163,7 +155,6 @@ namespace Lopushok
                     }
                 };
             }
-
             if (priceTag != "None")
             {
                 orderedQuery = orderedQuery switch
@@ -182,7 +173,6 @@ namespace Lopushok
                     }
                 };
             }
-
             if (nameTag != "None")
             {
                 orderedQuery = orderedQuery switch
@@ -201,7 +191,6 @@ namespace Lopushok
                     }
                 };
             }
-
             return orderedQuery ?? query;
         }
 
@@ -270,7 +259,7 @@ namespace Lopushok
             if (selected.Count == 0) return;
 
             var avg = selected.Average(p => p.MinAgentCost ?? 0);
-            var dialog = new ChangePriceWindow(avg);
+            var dialog = new ChangePriceWindow(avg, "Укажите новую цену");
             var result = await dialog.ShowDialog<decimal?>(this);
             if (result.HasValue)
             {
@@ -294,7 +283,7 @@ namespace Lopushok
             var selected = ProductListView.SelectedItems.Cast<ProductDisplay>().ToList();
             if (selected.Count == 0) return;
 
-            var dialog = new ChangePriceWindow(0);
+            var dialog = new ChangePriceWindow(0, "Введите на сколько вы \nхотите увеличить цену:");
             var result = await dialog.ShowDialog<decimal?>(this);
             if (result.HasValue)
             {

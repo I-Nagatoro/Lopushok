@@ -10,9 +10,10 @@ namespace Lopushok
     {
         public decimal? EnteredPrice { get; private set; }
 
-        public ChangePriceWindow(decimal suggestedPrice)
+        public ChangePriceWindow(decimal suggestedPrice, string message)
         {
             InitializeComponent();
+            PriceLabel.Text = message;
             PriceBox.Text = suggestedPrice.ToString("0.##", CultureInfo.InvariantCulture);
         }
 

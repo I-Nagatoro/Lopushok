@@ -37,6 +37,20 @@ public class RemoteDatabaseContext : DbContext
             e.Property(x => x.product_id).HasColumnName("product_id");
             e.Property(x => x.sale_date).HasColumnName("sale_date").ValueGeneratedOnAdd();
         });
+        
+        modelBuilder.Entity<ProductDAO>(e =>
+        {
+            e.ToTable("products", "lopushok");
+            e.HasKey(x => x.ProductId);
+            e.Property(x => x.ProductId).HasColumnName("product_id").ValueGeneratedOnAdd();
+            e.Property(x => x.ProductName).HasColumnName("product_name");
+            e.Property(x => x.Article).HasColumnName("article");
+            e.Property(x => x.MinAgentCost).HasColumnName("min_agent_cost");
+            e.Property(x => x.ImagePath).HasColumnName("image_path");
+            e.Property(x => x.ProductTypeId).HasColumnName("product_type");
+            e.Property(x => x.WorkersRequired).HasColumnName("workers_required");
+            e.Property(x => x.WorkshopNumber).HasColumnName("workshop_number");
+        });
 
         modelBuilder.Entity<MaterialDAO>(e =>
         {
@@ -58,20 +72,6 @@ public class RemoteDatabaseContext : DbContext
             e.HasKey(x => x.Id);
             e.Property(x => x.Id).HasColumnName("id").ValueGeneratedOnAdd();
             e.Property(x => x.ProductType).HasColumnName("product_type");
-        });
-
-        modelBuilder.Entity<ProductDAO>(e =>
-        {
-            e.ToTable("products", "lopushok");
-            e.HasKey(x => x.ProductId);
-            e.Property(x => x.ProductId).HasColumnName("product_id").ValueGeneratedOnAdd();
-            e.Property(x => x.ProductName).HasColumnName("product_name");
-            e.Property(x => x.Article).HasColumnName("article");
-            e.Property(x => x.MinAgentCost).HasColumnName("min_agent_cost");
-            e.Property(x => x.ImagePath).HasColumnName("image_path");
-            e.Property(x => x.ProductTypeId).HasColumnName("product_type");
-            e.Property(x => x.WorkersRequired).HasColumnName("workers_required");
-            e.Property(x => x.WorkshopNumber).HasColumnName("workshop_number");
         });
 
         modelBuilder.Entity<ProductMaterialDAO>(e =>
